@@ -170,8 +170,12 @@ export default function Home({ suppliers }) {
   );
 }
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3000/api/suppliers/information/`);
-  const suppliers = await res.json();
-  // console.debug('supplier 1', suppliers)
-  return { props: { suppliers } };
+  try {
+    const res = await fetch(`http://localhost:3000/api/suppliers/information/`);
+    const suppliers = await res.json();
+    return { props: { suppliers } };
+  } catch (error) {
+    console.error(error);
+    return { props: { suppliers: [] } };
+  }
 }
