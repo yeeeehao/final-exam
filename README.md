@@ -9,9 +9,9 @@ This project is a web application for managing suppliers, built using mongoDB an
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [CodeDetail](#codeDetail)
 - [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Installation
 
@@ -27,24 +27,12 @@ This project is a web application for managing suppliers, built using mongoDB an
 
 To use the application, simply navigate to the webpage on Vercel and follow the instructions provided.
 
+## CodeDetail
+
 ## Features
 
 - Add new suppliers
 - Edit existing suppliers
 - Delete suppliers
 - View a list of all suppliers
-- Search for suppliers by name or ID
-
-## Contributing
-
-To contribute to this project, please follow the steps below:
-
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new pull request
-
-## License
-
-This project is licensed under the [insert license name] license - see the [LICENSE.md](LICENSE.md) file for details.
+- List suppliers by name
