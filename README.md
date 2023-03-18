@@ -8,7 +8,7 @@ This project is using mongoDB and next.js writes a web page for managing supplie
 ## Table of Contents
 
 - [Installation](#installation)
-- [Some details of the code](#some details of the code)
+- [Details](#some details of the code)
 - [Features](#features)
 - [Conclusion](#conclusion)
 
