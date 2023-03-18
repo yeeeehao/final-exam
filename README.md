@@ -3,9 +3,13 @@
 #### Author: Hao Ye
 #### Student ID: 6238023
 
-## Overview
-
 This project is using mongoDB and next.js writes a web page for managing suppliers, and arranges this web page on vercel.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Features](#features)
+- [Conclusion](#conclusion)
 
 ## Preparation
 
