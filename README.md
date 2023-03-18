@@ -3,28 +3,48 @@
 #### Author: Hao Ye
 #### Student ID: 6238023
 
-This project is using mongoDB and next.js writes a web page for managing suppliers, and arranges this web page on vercel.
+This project is a web application for managing suppliers, built using mongoDB and next.js. The web page is hosted on Vercel.
 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Some details of the code](#details)
+- [Usage](#usage)
 - [Features](#features)
-- [Conclusion](#conclusion)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 
-1. Use git clone to clone the entire repository to your personal computer.
+1. Clone the repository onto your local machine using `git clone`.
 
-2. Create a new repository on github and connect this repository with the files downloaded in the previous step.
+2. Create a new repository on GitHub and connect it with the files downloaded in the previous step.
 
-3. Import the previous repository in vercel to create a new project.
+3. Import the GitHub repository into Vercel to create a new project.
 
-4. After that, you can directly open the webpage directly through vercel, and after you modify the code and upload it, it will be automatically synchronized to the website.
+4. After that, you can directly access the webpage through Vercel, and any changes made to the code will be automatically synchronized to the website.
 
-## Some details of the code
+## Usage
+
+To use the application, simply navigate to the webpage on Vercel and follow the instructions provided.
 
 ## Features
 
-## Conclusion
+- Add new suppliers
+- Edit existing suppliers
+- Delete suppliers
+- View a list of all suppliers
+- Search for suppliers by name or ID
 
+## Contributing
+
+To contribute to this project, please follow the steps below:
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new pull request
+
+## License
+
+This project is licensed under the [insert license name] license - see the [LICENSE.md](LICENSE.md) file for details.
