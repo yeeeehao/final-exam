@@ -76,7 +76,7 @@ export async function getServerSideProps({ params }) {
   console.debug("params", params);
   try {
     const response = await axios.get(
-      `http://localhost:3000/api/suppliers/information/${params.id}`
+      `https://final-exam-6238023.vercel.app/api/suppliers/information/${params.id}`
     );
     const supplier = response.data;
     console.debug("supplier 1", supplier);
