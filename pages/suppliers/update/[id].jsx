@@ -174,7 +174,7 @@ export default function Supplier({ supplier }) {
 export async function getServerSideProps({ params }) {
   console.debug("params", params);
   const res = await fetch(
-    `http://localhost:3000/api/suppliers/information/${params.id}`
+    `https://final-exam-6238023.vercel.app/api/suppliers/information/${params.id}`
   );
   const supplier = await res.json();
   console.debug("supplier 1", supplier);
