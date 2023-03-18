@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import axios from "axios";
 
 export default function Supplier({ supplier }) {
   console.log("supplier 2", supplier);
@@ -70,8 +71,6 @@ export default function Supplier({ supplier }) {
 }
 
 // STEP 1: This function will be executed at the server before loading the page.
-import axios from "axios";
-
 export async function getServerSideProps({ params }) {
   console.debug("params", params);
   try {
