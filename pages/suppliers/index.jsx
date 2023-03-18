@@ -172,7 +172,7 @@ export default function Home({ suppliers }) {
 }
 export async function getServerSideProps() {
   const response = await axios.get(
-    "https://final-exam-6238023.vercel.app/api/suppliers/information/api/suppliers/information/"
+    "https://final-exam-6238023.vercel.app/api/suppliers/information/"
   );
   const suppliers = response.data;
   // console.debug('supplier 1', suppliers)
