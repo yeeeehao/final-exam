@@ -66,36 +66,6 @@ export default function Home({ suppliers }) {
           background-color: #90caf9;
         }
 
-        .link {
-          color: #1565c0;
-          text-decoration: none;
-          border-bottom: 1px solid #1565c0;
-          transition: all 0.2s ease-in-out;
-        }
-
-        .link:hover {
-          color: #fff;
-          background-color: #1565c0;
-          border-bottom: none;
-          border-radius: 5px;
-        }
-
-        .add-button {
-          background-color: #1565c0;
-          color: #fff;
-          padding: 8px 16px;
-          text-decoration: none;
-          border-radius: 5px;
-          transition: all 0.2s ease-in-out;
-          margin-top: 2rem;
-          margin-left: 22%;
-        }
-
-        .add-button:hover {
-          background-color: #0d47a1;
-          border-radius: 5px;
-        }
-
         .delete-button {
           background-color: #90caf9;
           color: #fff;
@@ -121,9 +91,22 @@ export default function Home({ suppliers }) {
       </Head>
       <h1>Suppliers</h1>
       <p>
-        <a href="/suppliers/add" className="add-button">
+        <Link
+          href="/suppliers/add"
+          style={{
+            backgroundColor: "#1565c0",
+            color: "#fff",
+            padding: "8px 16px",
+            textDecoration: "none",
+            borderRadius: "5px",
+            transition: "all 0.2s ease-in-out",
+            marginTop: "2rem",
+            marginLeft: "22%",
+          }}
+          hover={{}}
+        >
           +New Supplier
-        </a>
+        </Link>
       </p>
 
       <table>
@@ -140,21 +123,34 @@ export default function Home({ suppliers }) {
             return (
               <tr key={supplier._id}>
                 <td>
-                  <a href={`/suppliers/${supplier._id}`} className="link">
+                  <Link
+                    href={`/suppliers/${supplier._id}`}
+                    style={{
+                      color: "#1565c0",
+                      textDecoration: "none",
+                      borderBottom: "1px solid #1565c0",
+                      transition: "all 0.2s ease-in-out",
+                    }}
+                  >
                     {supplier.supplier_name}
-                  </a>
+                  </Link>
                 </td>
                 <td>{supplier.address}</td>
                 <td>{supplier.phone_number}</td>
                 <td>
                   {
                     <>
-                      <a
+                      <Link
                         href={`/suppliers/update/${supplier._id}`}
-                        className="link"
+                        style={{
+                          color: "#1565c0",
+                          textDecoration: "none",
+                          borderBottom: "1px solid #1565c0",
+                          transition: "all 0.2s ease-in-out",
+                        }}
                       >
                         Update
-                      </a>
+                      </Link>
                       &nbsp;&nbsp;&nbsp;
                       <button
                         onClick={() => deleteSupplier(supplier._id)}

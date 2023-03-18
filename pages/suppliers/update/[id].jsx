@@ -120,19 +120,20 @@ export default function Supplier({ supplier }) {
             background-color: #fff;
             color: #1565c0;
           }
-
-          .backbutton {
-            font-size: 20px;
-            font-weight: bold;
-            color: #1565c0;
-            margin-left: 22.5%;
-            text-decoration: none;
-          }
         `}</style>
 
-        <a href="/suppliers" className="backbutton">
+        <Link
+          href="/suppliers"
+          style={{
+            fontSize: "20px",
+            fontWeight: "bold",
+            color: "#1565c0",
+            marginLeft: "22.5%",
+            textDecoration: "none",
+          }}
+        >
           Back
-        </a>
+        </Link>
         <form onSubmit={handleSubmit(updateSupplier)}>
           <h1>Update Supplier</h1>
           <label htmlFor="supplier_name">Supplier Name</label>

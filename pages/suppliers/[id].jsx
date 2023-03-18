@@ -40,14 +40,6 @@ export default function Supplier({ supplier }) {
           margin: 0;
         }
 
-        .backbutton {
-          font-size: 20px;
-          font-weight: bold;
-          color: #1565c0;
-          margin-left: 22.5%;
-          text-decoration: none;
-        }
-
         p {
           font-size: 25px;
           margin: 1rem;
@@ -56,9 +48,18 @@ export default function Supplier({ supplier }) {
       <Head>
         <title>{supplier.supplier_name}</title>
       </Head>
-      <a href="/suppliers" className="backbutton">
+      <Link
+        href="/suppliers"
+        style={{
+          fontSize: "20px",
+          fontWeight: "bold",
+          color: "#1565c0",
+          marginLeft: "22.5%",
+          textDecoration: "none",
+        }}
+      >
         Back
-      </a>
+      </Link>
       <form>
         <h1>{supplier.supplier_name}</h1>
         <p>Address: {supplier.address}</p>

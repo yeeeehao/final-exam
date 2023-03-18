@@ -105,9 +105,19 @@ export default function AddSupplierPage() {
         }
       `}</style>
 
-      <a href="/suppliers" className="backbutton">
+      <Link
+        href="/suppliers"
+        style={{
+          fontSize: "20px",
+          fontWeight: "bold",
+          color: "#1565c0",
+          marginLeft: "22.5%",
+          textDecoration: "none",
+        }}
+      >
         Back
-      </a>
+      </Link>
+
       <form onSubmit={handleSubmit(saveSupplier)}>
         <h1>New Supplier</h1>
         <label htmlFor="supplier_name">Supplier Name</label>
