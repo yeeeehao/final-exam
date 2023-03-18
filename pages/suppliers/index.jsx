@@ -14,6 +14,10 @@ export default function Home({ suppliers }) {
       });
   }
 
+  const sortedSuppliers = suppliers.sort((a, b) =>
+    a.supplier_name.localeCompare(b.supplier_name)
+  );
+
   return (
     <>
       <style jsx>{`
@@ -120,7 +124,7 @@ export default function Home({ suppliers }) {
           </tr>
         </thead>
         <tbody>
-          {suppliers.map((supplier) => {
+          {sortedSuppliers.map((supplier) => {
             return (
               <tr key={supplier._id}>
                 <td>
