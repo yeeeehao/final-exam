@@ -11,17 +11,15 @@ This project is a web application for managing suppliers, built using mongoDB an
 - [Usage](#usage)
 - [CodeDetail](#codeDetail)
 - [Features](#features)
+- [Conclusion](#conclusion)
 
 
 ## Installation
 
-1. Clone the repository onto your local machine using `git clone`.
-
-2. Create a new repository on GitHub and connect it with the files downloaded in the previous step.
-
-3. Import the GitHub repository into Vercel to create a new project.
-
-4. After that, you can directly access the webpage through Vercel, and any changes made to the code will be automatically synchronized to the website.
+- Clone the repository onto your local machine using `git clone`;
+- Create a new repository on GitHub and connect it with the files downloaded in the previous step;
+- Import the GitHub repository into Vercel to create a new project;
+- After that, you can directly access the webpage through Vercel, and any changes made to the code will be automatically synchronized to the website.
 
 ## Usage
 
@@ -29,10 +27,19 @@ To use the application, simply navigate to the webpage on Vercel and follow the 
 
 ## CodeDetail
 
+- Most of the modification of this code comes from the blogs code in the class;
+- Added UI with blue tint;
+- Modify the method `fetch` to `axios`, because using `fetch` can never read the data in the database in vercel (from ChatGPT);
+- Added a method to sort by supplier name in `/suppliers/index.jsx`.
+
 ## Features
 
-- Add new suppliers
-- Edit existing suppliers
-- Delete suppliers
-- View a list of all suppliers
-- List suppliers by name
+- Add new suppliers;
+- Edit existing suppliers;
+- Delete suppliers;
+- View a list of all suppliers;
+- List suppliers by name.
+
+## Conclusion
+
+This web page fulfills all the required functions.
