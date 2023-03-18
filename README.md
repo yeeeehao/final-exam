@@ -3,7 +3,7 @@
 #### Author: Hao Ye
 #### Student ID: 6238023
 
-This project is a web application for managing suppliers, built using mongoDB and next.js. The web page is hosted on Vercel.
+This project is a web application for managing suppliers, built using mongoDB and next.js. The web page is hosted on Vercel. You can view the finished product here [Supplier Management](https://final-exam-6238023.vercel.app/suppliers)
 
 ## Table of Contents
 
