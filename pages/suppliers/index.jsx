@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import axios from "axios";
 
 export default function Home({ suppliers }) {
   function deleteSupplier(id) {
@@ -170,10 +171,10 @@ export default function Home({ suppliers }) {
   );
 }
 export async function getServerSideProps() {
-  const res = await fetch(
-    `https://final-exam-6238023.vercel.app/api/suppliers/information/`
+  const response = await axios.get(
+    "http://localhost:3000/api/suppliers/information/"
   );
-  const suppliers = await res.json();
+  const suppliers = response.data;
   // console.debug('supplier 1', suppliers)
   return { props: { suppliers } };
 }

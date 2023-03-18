@@ -70,12 +70,19 @@ export default function Supplier({ supplier }) {
 }
 
 // STEP 1: This function will be executed at the server before loading the page.
+import axios from "axios";
+
 export async function getServerSideProps({ params }) {
   console.debug("params", params);
-  const res = await fetch(
-    `https://final-exam-6238023.vercel.app/api/suppliers/information/${params.id}`
-  );
-  const supplier = await res.json();
-  console.debug("supplier 1", supplier);
-  return { props: { supplier } };
+  try {
+    const response = await axios.get(
+      `http://localhost:3000/api/suppliers/information/${params.id}`
+    );
+    const supplier = response.data;
+    console.debug("supplier 1", supplier);
+    return { props: { supplier } };
+  } catch (error) {
+    console.error(error);
+    return { props: {} };
+  }
 }
